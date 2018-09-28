@@ -40,7 +40,7 @@ const fjsService = {
 
   async initFractalis () {
     this.settings = await this.fetchAsync('settings', 'GET')
-    this.fjs = window.fractal.init({
+    this.fjs = window.fractalis.init({
       handler: 'pic-sure',
       dataSource: this.settings.dataSource,
       fractalisNode: this.settings.node,
