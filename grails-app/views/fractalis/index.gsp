@@ -63,7 +63,7 @@
             <button class="fjs-tm-button" value="60" onclick="fjsService.setChartSize(this.value)">60%</button>
             <button class="fjs-tm-button" value="70" onclick="fjsService.setChartSize(this.value)">70%</button>
             <button class="fjs-tm-button" value="80" onclick="fjsService.setChartSize(this.value)">80%</button>
-            <button class="fjs-tm-button" value="90" onclick="fjsService.setChartSize(this.value)">70%</button>
+            <button class="fjs-tm-button" value="90" onclick="fjsService.setChartSize(this.value)">90%</button>
             <button class="fjs-tm-button" value="100" onclick="fjsService.setChartSize(this.value)">100%</button>
         </div>
 
