@@ -34,8 +34,8 @@ const fractalisPanel = new Ext.Panel({
 const fjsService = {
   fjs: null,
   settings: null,
-  chartWidth: '30vw',
-  chartHeight: '30vw',
+  chartWidth: null,
+  chartHeight: null,
   conceptBoxObserver: null,
 
   async initFractalis () {
@@ -52,6 +52,7 @@ const fjsService = {
         controlPanelExpanded: true
       }
     })
+    this.setChartSize(30)
   },
 
   activate () {
@@ -74,6 +75,10 @@ const fjsService = {
   },
 
   setChartSize (value) {
+    Array.prototype.forEach.call(document.querySelectorAll('.fjs-chart-size-btn'), el => {
+      el.classList.remove('fjs-chart-size-btn-selected')
+    })
+    document.querySelector(`.fjs-chart-size-btn[value="${value}"]`).classList.add('fjs-chart-size-btn-selected')
     this.chartWidth = value + 'vw'
     this.chartHeight = value + 'vw'
     Array.prototype.forEach.call(document.querySelectorAll('.fjs-tm-charts > div'), div => {

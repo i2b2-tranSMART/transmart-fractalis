@@ -50,6 +50,10 @@
     background: #fff none;
 }
 
+.fjs-chart-size-btn-selected {
+    background: #ddd none;
+}
+
 .fjs-tm-button:hover {
     background: #ddd none;
 }
