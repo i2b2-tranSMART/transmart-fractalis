@@ -1,7 +1,10 @@
 // # sourceURL=fractalis.js
 
 // eslint-disable-next-line no-unused-vars
-window.addFractalisPanel = parentPanel => parentPanel.insert(4, fractalisPanel)
+window.addFractalisPanel = parentPanel => parentPanel.insert(resultsTabPanel.items.length, fractalisPanel);
+// Add panel to the end of the tab list
+//resultsTabPanel.add(fractalisPanel);
+// Dynamically add the Fractalis plugin planel, for advanced statistical visualizations
 
 const fractalisPanel = new Ext.Panel({
   id: 'fractalisPanel',
